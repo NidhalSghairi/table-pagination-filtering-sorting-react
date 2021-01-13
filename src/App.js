@@ -74,7 +74,7 @@ const App = () => {
   }
 
   // Get current rows
-  const rowPerPage = 3
+  const rowPerPage = 10
   const indexOfLastRow = currentPage * rowPerPage
   const indexOfFirstRow = indexOfLastRow - rowPerPage
   const currentRows = data && data.slice(indexOfFirstRow, indexOfLastRow)
@@ -91,6 +91,20 @@ const App = () => {
       { firstName: 'Romio', name: 'Name4', avgScore: 70 },
       { firstName: 'Julie', name: 'Name5', avgScore: 60 },
       { firstName: 'Benjamin', name: 'Name6', avgScore: 66 },
+      { firstName: 'Alex', name: 'Name7', avgScore: 22 },
+      { firstName: 'Nidhal', name: 'Name8', avgScore: 11 },
+      { firstName: 'Macron', name: 'Name9', avgScore: 4 },
+      { firstName: 'Pedro', name: 'Name10', avgScore: 2 },
+      { firstName: 'Cristiano', name: 'Name11', avgScore: 100 },
+      { firstName: 'messi', name: 'Name12', avgScore: 14 },
+      { firstName: 'Frederick', name: 'Name13', avgScore: 8 },
+      { firstName: 'kaka', name: 'Name14', avgScore: 16 },
+      { firstName: 'Pyol', name: 'Name15', avgScore: 11 },
+      { firstName: 'Adel', name: 'Name16', avgScore: 50 },
+      { firstName: 'Ali', name: 'Name17', avgScore: 42 },
+      { firstName: 'Laetitia', name: 'Name18', avgScore: 100 },
+      { firstName: 'Nadege', name: 'Name19', avgScore: 80 },
+      { firstName: 'Imen', name: 'Name20', avgScore: 0 },
     ])
   }
 
