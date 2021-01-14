@@ -153,7 +153,7 @@ const App = () => {
             <Input
               type="number"
               id="tentacles"
-              value={value}
+              value={value || ''}
               name="tentacles"
               min="0"
               onChange={handleInputChange}
@@ -171,6 +171,7 @@ const App = () => {
               {operations.map((operation) => {
                 return (
                   <MenuItem
+                    key={operation}
                     onClick={() => {
                       handleClose()
                       setOperation(operation)

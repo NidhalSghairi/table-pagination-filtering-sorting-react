@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 const Table = ({ data }) => {
   /** a function used to creates rows filled with the given data */
   const getRowsData = () => {
@@ -28,4 +28,16 @@ const Table = ({ data }) => {
   )
 }
 
+Table.propTypes = {
+  /**
+   * the used data
+   */
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      firstName : PropTypes.string,
+      name : PropTypes.string,
+      avgScore : PropTypes.number
+    })
+  )
+}
 export default Table
